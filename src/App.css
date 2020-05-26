@@ -1,19 +1,43 @@
-.App {
+.App 
+{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar
+{
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  height: 80px;
+  z-index: 1;
+;}
+.searchbar
+{
+  width: 100%;
+}
+.logo
+{
+  color: #232f3e;
+  display: inline;
+}
+.search
+{
+  background-color: darkgray(128, 128, 128);
+}
+.login
+{
+  color: gray;
+  display: inline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart
+{
+  display: inline;
+  color:gray;
 }
-
-.App-header {
+.App-header
+ {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,16 +47,145 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.search-icon
+{
+  display: none;
+}
+.head{
+  margin-top: 5%;
+  padding: 1% 6%;
+  margin-left: 2%;
+}
+.navhead
+{
+display: flex;
+justify-content: space-evenly;
+list-style-type: square;
+}
+.head ul li 
+{
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.titleforslide
+{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-right: 8%;
+}
+.body-heading
+{
+
+  font-weight: bold;
+  font-size: 1em;
+}
+.card
+{
+/* margin-left: 1%;
+margin-right: 2%; */
+}
+hr
+{ 
+margin-top: 1%;
+width: 85%;
+}
+.carousel
+{
+  align-content: center;
+  margin:0% 8%;
+}
+
+.tk img
+{
+width: 80%;
+height: 72vh;
+}
+.bodypart
+{
+  display: flex;
+  margin: 4% 7%;
+}
+.carousel2 ul li 
+{
+display: block;
+text-align: left;
+font-size: 0.9em;
+}
+.heading
+{
+margin-bottom: 4px;
+font-weight: bold;
+font-size: 1em;
+
+}
+.listitem
+{
+  padding-top: 2%;
+  margin-top: 1%;
+}
+.sli{
+  width: 100%;
+  height: 90%;
+}
+.carousel2{
+  z-index: 1;
+  top:24%;
+  left: 9%;
+  right: 9%;
+  position: fixed;
+  height: 350px;
+  align-content: center;
+  background-color:  #37475a;
+}
+
+.backtohome
+{
+  color: white;
+
+  display: flex;
+  height:50px;
+  justify-content: center;
+  background-color: #37475a;
+  align-items: center;
+
+}
+.footer ul{
+  list-style-type: none;
+
+}
+.footer
+{
+  line-height: 150%;
+  padding: 4% 2%;
+  font-size: 1em;
+  color: white;
+  text-align: left;
+  background-color: #232f3e;
+}
+ .carousel2 ul 
+
+{
+text-decoration: none;
+justify-content: start;
+}
+
+li {
+  cursor: pointer;
+}
+@media  screen and (max-width:  768px)  {
+
+  .signup 
+  {
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+  @media  screen and (max-width:  1222px)  {
+
+    .carousel2 
+    {
+      display:none;
+    }
+  
 }
